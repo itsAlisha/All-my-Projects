@@ -1,0 +1,65 @@
+body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: rgba(0,0,0,0.6)url("bg1.png");
+    background-blend-mode: darken;
+}
+.nowrap{
+    white-space: nowrap;
+}
+.logo{
+    width:20%;
+}
+.btn{
+    padding: 8px 15px;
+    color:#fff;
+    background-color: #e50914;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+.nav{
+    padding-top: 5px;
+    padding-left: 2vw;
+    padding-right: 5vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+select{
+    margin-left: 70%;
+    padding: 8px;
+}
+.content{
+    color:#fff;
+    position: absolute;
+    margin-top: 8%;
+    margin-left: 30%;
+}
+.content h1{
+    font-size: 50px;
+}
+.content h2{
+    font-size: 30px;;
+}
+.mail{
+    text-decoration: none;
+    width:100%;
+    height: fit-content;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+}
+.mail input{
+    outline: none;
+    border: none;
+    padding: 12px 10px;
+    size: 1em;
+}
+.mail a{
+    height: fit-content;
+    background-color: #e50914;
+    color: #fff;
+    padding: 18px 12px;
+}
