@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Noto+Serif+JP:wght@200&family=Pacifico&family=Poppins:wght@300&family=Preahvihear&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/c4254e24a8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="logo.jpg" alt="img not found" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark close" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+      </div>
+      <div class="header-text">
+        <p>Web Developer</p>
+        <h1>
+          Hi, I'm <span>Alisha</span><br />
+          from India
+        </h1>
+      </div>
+    </div>
+    <!-- About -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="alisha2.jpg" alt="img not found" class="img2" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p class="para">
+              I am a passionate student pursuing CSE with expertise in problem
+              solving and have a strong foundation in data structures and
+              algorithms. I strive to create efficient and optimal code.
+              Currenty I am expanding my skills with latest technologies such as
+              Artificial Intelligence
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>UI/UX<br /></span>Designing Web/App interfaces
+                </li>
+                <li><span>Web Development</span><br />Front-end Development</li>
+                <li><span>Coding Skills</span><br />Online Coding Platforms</li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>BTech CSE(CGPA :7.6)<br /></span>National Institute of
+                  Technology Jalandhar
+                </li>
+                <li>
+                  <span>Senior Secondary(95.2%)</span><br />MGN Public School
+                </li>
+                <li>
+                  <span>Secondary(96.8%)</span><br />Cambridge International
+                  School
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--services-->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-brands fa-codepen"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              I'm skilled in crafting captivating UI/UX designs, demonstrated by
+              the Under25 app's logo and dark mode as well as My own College
+              NITJ's Alumni Portal built using Figma and Canva tools giving
+              visually pleasing interfaces. Additionally,<span id="more1">
+                my College's YMC Club's logo and designs for my Hackathons and
+                Hackmols are a part of my UI/UX Designs</span
+              >
+            </p>
+            <a
+              id="myBtn1"
+              href="javascript:void(0);"
+              onclick="toggleContent('more1', 'myBtn1')"
+              >Show More</a
+            >
+          </div>
+          <div>
+            <i class="fa-solid fa-earth-americas"></i>
+            <h2>Web Design</h2>
+            <p>
+              My Web Design proficiency is evident in projects like the
+              University Management System highlighting my front-end and backend
+              capabilities. Additionally,<span id="more2">
+                I replicated the Netflix Homepage using HTML and CSS, showcasing
+                my front-end skills. These projects underline my ability to
+                bring ideas to life through design.</span
+              >
+            </p>
+            <a
+              id="myBtn2"
+              href="#javascript:void(0);"
+              onclick="toggleContent('more2', 'myBtn2')"
+              >Show More</a
+            >
+          </div>
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Coding</h2>
+            <p>
+              My Coding design expertise shines in projects like the engaging
+              KBC Quiz, Sudoku Game offering intuitive interactions for users,
+              and the visually appealing Travel and Tourism theme based Project
+              with concepts of OOPs and Inheritance.<span id="more3"
+                >These projects showcase my interest in creating projects
+                through Progrmming Languages like C++, Java etc.</span
+              >
+            </p>
+            <a
+              id="myBtn3"
+              href="#javascript:void(0);"
+              onclick="toggleContent('more3', 'myBtn3')"
+              >Show More</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- portfolio -->
+    <div id="portfolio">
+      <div class="sub-title">
+        <h1 class="sub-title mywork">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="p1.jpg" class="img1" />
+            <div class="layer">
+              <h3>Portfolio Website</h3>
+              <p>
+                This contains my portfolio in a Website, which is a responsive
+                Website made using HTML, CSS and Javscript concepts.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="nflix.png" />
+            <div class="layer">
+              <h3>Netflix HomePage</h3>
+              <p>
+                This contains a Netflix Homepage, I have made a responsive
+                Website using HTML and CSS concepts.
+              </p>
+              <a href="https://itsalisha.github.io/Projects_BharatIntern2/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="todo.png" class="img1" />
+            <div class="layer">
+              <h3>To Do List</h3>
+              <p>
+                This contains a To Do List, I have made it using Bootstrap and
+                Javascript.
+              </p>
+              <a href="https://itsalisha.github.io/To_Do_List/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="https://github.com/itsAlisha/All-my-Projects" class="btn but"
+          ><h6>See More</h6></a
+        >
+      </div>
+    </div>
+    <!-- contact -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title cont">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-envelope"></i
+              ><a href="mailto:bhagatalisha1@gmail.com" class="cd"
+                >bhagatalisha1@gmail.com</a
+              >
+            </p>
+            <p>
+              <i class="fa-solid fa-phone"></i>
+              <a href="tel:+917710257939" class="cd">+917710257939</a>
+            </p>
+            <div class="social-icons">
+              <a
+                href="https://www.linkedin.com/in/alisha-0ba8ab278/"
+                class="col1"
+                ><i class="fa-brands fa-linkedin"></i>
+              </a>
+              <a href="https://twitter.com/bhagatalisha1"
+                ><i class="fa-brands fa-square-x-twitter"></i>
+              </a>
+              <a href="https://github.com/itsAlisha"
+                ><i class="fa-brands fa-square-github"></i
+              ></a>
+            </div>
+            <a href="Alisha Resume.pdf" download class="btn btn2 btn3"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input
+                type="text"
+                name="Name"
+                placeholder="Enter your Name"
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <span id="msg">Enter your details</span>
+              <button type="submit" class="btn btn2">Submit Form</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">Copyright © Alisha.</div>
+    </div>
+
+    <script src="changes.js" defer></script>
+  </body>
+</html>
